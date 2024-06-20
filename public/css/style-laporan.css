@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page-break {
+    page-break-after: always;
+}
+
+header {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 20px;
+}
+header img {
+    display: inline-block;
+}
+
+main {
+    width: 100%;
+    padding: 2rem;    
+}
+
+table {
+    margin-inline: auto;
+    width: 90%;
+    border-spacing: 0;
+}
+
+tfoot {
+    background-color: #f0eaea;
+}
+
+table th {
+    text-align: left;
+}
+
+table th, table td{
+    padding: 0.5rem;
+}
+
+table thead th.border-head {
+    border-bottom: 1px solid #c0c0c0;
+}
+
+table tbody td {
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#table-header {
+    width: 100%;
+    /* background-color: #c0c0c0; */
+    margin-bottom: 1rem;
+}
+
+#table-header table {
+    
+}
+
+#table-header th, #table-header td{
+    border: none;
+}
+
+#table-header .header-head {
+    width: 20%;
+}
+
+#table-header .header-dua {
+    width: 1rem;
+}
+
+#table-header .header-item {
+    display: inline-block;
+    width: 80%;
+}
+
+#table-header .wrapper {
+    display: inline-block;
+    width: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.border-bottom {
+    border-bottom: 1px solid;
+}
+
+.bg-secondary {
+    background-color: #f0eaea;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}

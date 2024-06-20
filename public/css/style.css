@@ -1,0 +1,695 @@
+header {
+    padding-inline: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
+
+.search-box {
+    width: 40%;
+    border-radius: 4rem;
+}
+
+.card-link-hover {
+    transition: all 0.3s ease-out;
+}
+
+.card-link-hover:hover {
+    position: relative;
+    z-index: 50;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.card-link-hover:active {
+    position: relative;
+    z-index: 50;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+.image-card {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.icon-widget {
+    display: block;
+    width: 40px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: black;
+}
+
+.icon-widget:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.profile {
+    margin-left: 15px;
+}
+
+.icon-profile {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.link-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    border-radius: 1rem;
+}
+
+.link-profile:hover {
+    background-color: #0d6efd;
+    color: #ffff;
+}
+
+.badge-custom {
+    font-size: 0.6rem;
+    top: 10px;
+}
+
+.collapse-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    z-index: 150;
+    border-radius: 0.5rem;
+    padding-block: 1rem;
+    transition: all 0.2s ease-in;
+}
+
+.collapse-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    position: absolute;
+    top: 70px;
+    right: 75px;
+    z-index: 150;
+    border-radius: 0.5rem;
+    padding-block: 1rem;
+    transition: all 0.2s ease-in;
+}
+
+.collapse-cart.hide {
+    display: none;
+}
+
+.collapse-user.hide {
+    top: -150px;
+}
+
+.collapse-item {
+    display: block;
+    margin-inline: auto;
+    width: 90%;
+    height: 40px;
+    border-radius: 0.5rem;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    background-color: white;
+    color: black;
+}
+
+.collapse-cart-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    height: 60px;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    background-color: white;
+    color: black;
+}
+
+.bg-collapse {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 0.2s ease;
+}
+
+.produk-hapus {
+    display: inline-block;
+    height: 40px;
+    line-height: 30px;
+    font-size: 1rem;
+}
+
+.btn-selengkapnya {
+    display: block;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.bg-collapse.hide {
+    display: none;
+}
+
+.collapse-item:hover {
+    color: white;
+    background-color: #0d6efd;
+}
+
+.collapse-cart-item:hover {
+    color: white;
+    background-color: #0d6efd;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.image-carousel {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -20px;
+}
+.carousel-indicators button {
+    display: block;
+    width: 3rem !important;
+    height: 3rem !important;
+    border-radius: 1rem;
+}
+
+.carousel-indicators button img {
+    display: block;
+    width: 100%;
+    max-height: 3rem;
+    object-fit: cover;
+}
+
+.card-pembayaran-barang {
+    width: 100%;
+    max-height: 200px;
+    box-sizing: border-box;
+}
+
+.card-pembayaran-barang .card {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+.card-pembayaran-barang .card img {
+    width: 20%;
+    object-fit: cover;
+}
+
+.card-pembayaran-barang .card .card-body {
+    width: 75%;
+}
+
+.card-pembayaran-barang .card .card-body div {
+    margin-top: 1rem;
+    width: 100px;
+}
+
+.card-pengiriman-barang {
+    margin-top: 1rem;
+}
+
+.btn-alamat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    background-color: #ffff;
+}
+
+.btn-pembayaran {
+    display: block;
+    width: 6rem;
+    height: 5rem;
+    padding: 0.5rem;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.btn-pembayaran:hover {
+    display: block;
+    width: 6rem;
+    height: 5rem;
+    padding: 0.5rem;
+    border: 2px solid #609fff;
+    border-radius: 1rem;
+}
+
+.btn-pembayaran:active {
+    transform: scale(0.8);
+    border: 2px solid #0d6efd;
+    transition: all 0.3s ease;
+}
+
+.btn-pembayaran.active {
+    transform: scale(0.9);
+    background-color: #ffff;
+    border: 2px solid #0d6efd;
+    transition: all 0.3s ease;
+}
+
+.btn-pembayaran img {
+    width: 100%;
+}
+
+.badge-notification {
+    padding: 0.3rem;
+    top: 3px;
+    right: 2px;
+}
+
+main {
+    margin-block: 6rem;
+}
+
+main section div.card.card-item {
+    width: 17rem;
+}
+
+/* Detail Katalog */
+
+main section#detail-image {
+    width: 25%;
+}
+
+main section#detail-image img {
+    width: 100%;
+}
+
+main section#detail-description {
+    width: 50%;
+}
+
+main section#detail-aside {
+    width: 20%;
+}
+
+main #totalBarang {
+    width: 50%;
+    border: none;
+}
+
+main input#totalBarang:focus {
+    outline: none;
+    border: none;
+}
+
+main input#totalBarang::-webkit-outer-spin-button,
+input#totalBarang::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+main section#detail-aside input#totalBarang[type="number"] {
+    -moz-appearance: textfield;
+}
+
+main aside .btn-aside {
+    display: inline-block;
+    width: 100%;
+    height: 2rem;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2rem;
+    border: none;
+}
+
+main .sect-success-pembayaran {
+    margin-inline: auto;
+    width: 60%;
+    padding: 1rem;
+    border-radius: 2rem;
+
+    transition: all 1s ease-in-out;
+}
+
+main .sect-success-pembayaran .icon-pembayaran-success {
+    font-size: 4rem;
+}
+
+.cart-item {
+    width: 85%;
+    height: 120px;
+    border-radius: 0.5rem;
+    background-color: #ffff;
+
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.cart-item img {
+    height: 100%;
+}
+
+.cart-item .btn-control-cart {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.btn-control-notifikasi {
+    font-size: 1rem;
+}
+
+.pembelian-item {
+    width: 100%;
+    height: 150px;
+    border-radius: 0.5rem;
+    background-color: #ffff;
+
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.pembelian-item-content {
+    width: 100%;
+
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.pembelian-item-content .pembelian-tanggal {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px solid #ced4da;
+}
+
+.pembelian-item-content .pembelian-content {
+    padding: 5px;
+    padding-block: 10px;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pembelian-item-content .status-pembelian {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+body.status-pembelian {
+    height: 80vh;
+}
+
+.progres-pembelian {
+    height: 100%;
+}
+
+.img-status-pembelian {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-inline: auto;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+    .card-pembayaran-barang .card img {
+        width: 30%;
+        max-height: 150px;
+        object-fit: cover;
+    }
+
+    .card-pembayaran-barang .card .card-body {
+        width: 70%;
+    }
+
+    main section#detail-image {
+        width: 20%;
+    }
+
+    main section#detail-description {
+        width: 50%;
+    }
+
+    main section#detail-aside {
+        width: 25%;
+    }
+}
+
+/* Display Detail Katalog Medium */
+@media screen and (max-width: 767px) {
+    main {
+        margin-top: 4rem;
+    }
+
+    .card-pembayaran-barang .card img {
+        width: 25%;
+        max-height: 150px;
+        object-fit: cover;
+    }
+
+    .card-pembayaran-barang .card .card-body {
+        width: 75%;
+    }
+
+    main section div.card.card-item {
+        width: 15rem;
+    }
+
+    main section#detail-image {
+        width: 100%;
+    }
+
+    main section#detail-description {
+        width: 100%;
+    }
+
+    main section#detail-aside {
+        display: none;
+    }
+
+    main .sect-success-pembayaran {
+        margin-inline: auto;
+        width: 80%;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    body.status-pembelian {
+        height: 85vh;
+    }
+
+    .pembelian-item-content span.badge {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .card-pembayaran-barang .card img {
+        width: 30%;
+        max-height: 150px;
+        object-fit: cover;
+    }
+
+    .card-pembayaran-barang .card .card-body {
+        width: 70%;
+    }
+
+    .card-pembayaran-barang .card .card-body .card-title {
+        font-size: 1rem;
+    }
+
+    .card-pembayaran-barang .card .card-body .card-text {
+        font-size: 1rem;
+    }
+
+    .card-pembayaran-barang .card .card-body div {
+        width: 100px;
+    }
+
+    main section div.card.card-item {
+        width: 12rem;
+    }
+
+    main .sect-success-pembayaran {
+        margin-inline: auto;
+        width: 85%;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    .cart-item {
+        width: 100%;
+        height: 150px;
+        border-radius: 0.5rem;
+        background-color: #ffff;
+
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .pembelian-item {
+        width: 100%;
+        height: 200px;
+        border-radius: 0.5rem;
+        background-color: #ffff;
+
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .pembelian-item img {
+        width: 30%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .pembelian-item-content .pembelian-content {
+        justify-content: start;
+    }
+
+    .pembelian-content .pembelian-judul {
+        font-size: 16px;
+    }
+
+    .pembelian-item-content span.badge {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .card-pembayaran-barang {
+        width: 100%;
+        max-height: 250px;
+        box-sizing: border-box;
+    }
+
+    .card-pembayaran-barang .card img {
+        width: 40%;
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    .card-pembayaran-barang .card .card-body {
+        width: 60%;
+    }
+
+    .card-pembayaran-barang .card .card-body .card-title {
+        font-size: 1rem;
+    }
+
+    .card-pembayaran-barang .card .card-body .card-text {
+        font-size: 1rem;
+    }
+
+    .card-pembayaran-barang .card .card-body div {
+        margin-top: 0.5rem;
+        width: 100px;
+    }
+
+    main section div.card.card-item {
+        width: 11rem;
+    }
+
+    main .sect-success-pembayaran {
+        margin-inline: auto;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    .cart-item {
+        width: 100%;
+        height: 160px;
+        border-radius: 0.5rem;
+        background-color: #ffff;
+
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .btn-control-notifikasi {
+        font-size: 13px;
+    }
+
+    .pembelian-item {
+        width: 100%;
+        height: 120px;
+        border-radius: 0.5rem;
+        background-color: #ffff;
+
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .pembelian-item img {
+        width: 25%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .pembelian-content .pembelian-judul {
+        font-size: 14px;
+    }
+
+    .pembelian-content p {
+        font-size: 12px;
+    }
+
+    .pembelian-item-content span.badge {
+        font-size: 8px;
+    }
+}
